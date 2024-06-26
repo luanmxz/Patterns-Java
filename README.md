@@ -1,59 +1,71 @@
 # Patterns-Java
 
-This project is dedicated to studying design patterns using Java.
+## Overview
+
+This project is a study of design patterns implemented in Java. It includes various common design patterns, providing examples and explanations to help developers understand and apply these patterns in their own projects.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Installation](#installation)
+- [Getting Started](#getting-started)
+- [Design Patterns Included](#design-patterns-included)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
+## Getting Started
 
-This repository contains various design patterns implemented in Java. The primary goal is to understand and practice the implementation of common design patterns.
+To get started with this project, you will need to clone the repository and have Java installed on your machine.
 
-## Installation
+### Prerequisites
+
+- Java Development Kit (JDK) 8 or higher
+
+### Installation
 
 1. Clone the repository:
-
     ```bash
     git clone https://github.com/luanmxz/Patterns-Java.git
+    ```
+2. Navigate to the project directory:
+    ```bash
     cd Patterns-Java
     ```
 
-2. Build the project using your preferred IDE or command line with Maven:
+## Design Patterns Included
 
-    ```bash
-    ./mvnw clean install
-    ```
+The project includes the following design patterns:
+
+1. **Singleton Pattern**
+   - Ensures a class has only one instance and provides a global point of access to it.
+   - Files: `SingletonPattern.java`, `TestSingleton.java`
+2. **Observer Pattern**
+   - Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+   - Files: `MyObservable.java`, `MyObserver.java`, `ObserverApp.java`
 
 ## Usage
 
-1. Open the project in your preferred IDE.
-2. Run the main classes in the `src/main/java` directory to see the design patterns in action.
+Each design pattern is implemented in its respective Java file(s). You can run these examples to see how each pattern works.
 
-## Project Structure
+### Example
 
-- **src/**: Contains the source code
-  - **main/**: Main application files
-    - **java/**: Java source files
-      - **singleton/**: Implementation of the Singleton pattern
-      - **observer/**: Implementation of the Observer pattern
+To run the Singleton pattern example:
+```bash
+javac SingletonPattern.java
+java SingletonPattern
+```
 
 ## Contributing
 
-Contributions are welcome! Please follow these steps:
+Contributions are welcome! Please fork this repository and submit pull requests for any improvements or additional patterns you would like to add.
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -m 'Add some feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Create a new Pull Request.
+### Steps to Contribute
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature-branch`)
+5. Open a pull request
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
